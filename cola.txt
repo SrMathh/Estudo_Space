@@ -1,0 +1,10 @@
+adicionar dados no banco 
+
+>> from galeria .models import Fotografia
+>>> foto = Fotografia (nome="Nebulosa de Carina", legenda="webbtelecope.org / NASA / James Weeb",foto="carina-nebula.png")
+>>> foto.save()
+
+buscar dados no banco
+
+>> from galeria.models import Fotografia
+>>> fotos = Fotografia.objects.all()
